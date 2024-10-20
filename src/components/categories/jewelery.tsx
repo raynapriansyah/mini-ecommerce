@@ -1,10 +1,5 @@
 import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "~/components/ui/card";
+import { Card, CardContent, CardHeader } from "~/components/ui/card";
 
 export default function CategoryJewelery({
   title,
@@ -36,13 +31,12 @@ export default function CategoryJewelery({
         </CardHeader>
         <CardContent>
           <h1>{limitedTitle}</h1>
-          <div className="flex justify-between">
-            <h1 className="font-bold">${price}</h1>
+          <h1 className="font-bold text-lg">${price}</h1>
+          <div className="flex justify-between mt-2">
             <h1>{rating.rate}⭐</h1>
+            <h1>Stock: {rating.count}</h1>
           </div>
-          <h1>Stock: {rating.count}</h1>
         </CardContent>
-        <CardFooter className="flex justify-between">footer</CardFooter>
       </Card>
     </div>
   );

@@ -34,7 +34,7 @@ export const items = [
     ],
   },
   {
-    title: "Category",
+    title: "Categories",
     url: "/",
     icon: Shapes,
     isActive: true,
