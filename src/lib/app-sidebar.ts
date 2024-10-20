@@ -1,5 +1,6 @@
 import { Store, ShoppingBag, ShoppingCart, Shapes } from "lucide-react";
 
+// Top Product
 export const topProduct = [
   {
     name: "Product 1",
@@ -18,15 +19,16 @@ export const topProduct = [
   },
 ];
 
+// Platform;
 export const items = [
   {
-    title: "Products",
+    title: "Product",
     url: "/",
     icon: ShoppingBag,
     isActive: true,
     items: [
       {
-        title: "All Products",
+        title: "All Product",
         url: "/products",
       },
     ],
