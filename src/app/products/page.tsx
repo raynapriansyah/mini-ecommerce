@@ -6,7 +6,7 @@ export default async function Products() {
   const products = await GetAllProducts();
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
       {products.map((product: ProductsProps) => {
         return (
           <div key={product.id}>

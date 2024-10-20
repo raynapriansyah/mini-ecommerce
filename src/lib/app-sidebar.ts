@@ -40,8 +40,20 @@ export const items = [
     isActive: true,
     items: [
       {
-        title: "kela",
-        url: "/product",
+        title: "Electronics",
+        url: "/categories/electronics",
+      },
+      {
+        title: "Jewelery",
+        url: "/categories/jewelery",
+      },
+      {
+        title: "Men's  Clothing",
+        url: "/categories/men-clothing",
+      },
+      {
+        title: "Women's Clothing",
+        url: "/categories/women-clothing",
       },
     ],
   },
