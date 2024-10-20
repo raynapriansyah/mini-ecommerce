@@ -2,7 +2,7 @@ import CategoryJewelery from "~/components/categories/jewelery";
 import { GetCategoriesJewelery } from "~/lib/fetch-data";
 import { ProductsProps } from "~/lib/type";
 
-export default async function ElectronicsPage() {
+export default async function JeweleryPage() {
   const jewelerys = await GetCategoriesJewelery();
 
   return (

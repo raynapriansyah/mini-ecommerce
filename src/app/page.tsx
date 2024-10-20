@@ -1,7 +1,18 @@
+import ElectronicsPage from "./categories/electronics/page";
+import JeweleryPage from "./categories/jewelery/page";
+
 export default function Home() {
   return (
     <div>
-      <h1>Welcome Home!</h1>
+      <div>
+        <h1>Elecrtronic</h1>
+        <ElectronicsPage />
+      </div>
+      <br />
+      <div>
+        <h1>Jewelery</h1>
+        <JeweleryPage />
+      </div>
     </div>
   );
 }
