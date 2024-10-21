@@ -16,20 +16,13 @@ export function LoginForm() {
     <Card className="mx-auto max-w-sm">
       <CardHeader>
         <CardTitle className="text-2xl">Login</CardTitle>
-        <CardDescription>
-          Enter your email below to login to your account
-        </CardDescription>
+        <CardDescription>Enter your email below to login</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="grid gap-4">
           <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="m@example.com"
-              required
-            />
+            <Input id="email" type="email" placeholder="" required />
           </div>
           <div className="grid gap-2">
             <div className="flex items-center">

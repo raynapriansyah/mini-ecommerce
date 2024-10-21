@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CategoryJewelery from "~/components/categories/jewelery";
 import { GetCategoriesJewelery } from "~/lib/fetch-data";
 import { ProductsProps } from "~/lib/type";
@@ -7,16 +8,16 @@ export default async function JeweleryPage() {
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
-      {jewelerys.map((jewelerys: ProductsProps) => {
+      {jewelerys.map((jewelery: ProductsProps) => {
         return (
-          <div key={jewelerys.id}>
+          <Link key={jewelery.id} href={`/products/${jewelery.id}`}>
             <CategoryJewelery
-              title={jewelerys.title}
-              image={jewelerys.image}
-              price={jewelerys.price}
-              rating={jewelerys.rating}
+              title={jewelery.title}
+              image={jewelery.image}
+              price={jewelery.price}
+              rating={jewelery.rating}
             />
-          </div>
+          </Link>
         );
       })}
     </div>

@@ -6,10 +6,12 @@ export default function AllProducts({
   image,
   price,
   rating,
+  description,
 }: {
   title: string;
   image: string;
   price: number;
+  description?: string;
   rating: {
     rate: number;
     count: number;
@@ -19,7 +21,7 @@ export default function AllProducts({
 
   return (
     <div>
-      <Card>
+      <Card className="h-[350px]">
         <CardHeader className="flex justify-center items-center">
           <Image
             src={image}
@@ -34,6 +36,7 @@ export default function AllProducts({
           <h1 className="font-bold text-lg">${price}</h1>
           <div className="flex justify-between mt-2">
             <h1>{rating.rate}⭐</h1>
+            <h1>{description}</h1>
             <h1>Stock: {rating.count}</h1>
           </div>
         </CardContent>

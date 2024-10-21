@@ -5,6 +5,10 @@ export default function Home() {
   return (
     <div>
       <div>
+        <h1>Home Page</h1>
+      </div>
+      <br />
+      <div>
         <h1>Elecrtronic</h1>
         <ElectronicsPage />
       </div>
