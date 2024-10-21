@@ -3,6 +3,7 @@ export type ProductsProps = {
   title: string;
   image: string;
   price: number;
+  description?: string;
   rating: {
     rate: number;
     count: number;
