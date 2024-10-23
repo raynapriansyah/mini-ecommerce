@@ -17,8 +17,6 @@ export default function AllProducts({
     count: number;
   };
 }) {
-  const limitedTitle = title.length > 35 ? `${title.slice(0, 35)}...` : title;
-
   return (
     <div>
       <Card className="h-[350px]">
@@ -32,7 +30,7 @@ export default function AllProducts({
           />
         </CardHeader>
         <CardContent>
-          <h1>{limitedTitle}</h1>
+          <h1>{title}</h1>
           <h1 className="font-bold text-lg">${price}</h1>
           <div className="flex justify-between mt-2">
             <h1>{rating.rate}⭐</h1>
