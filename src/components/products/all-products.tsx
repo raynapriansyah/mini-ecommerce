@@ -19,7 +19,7 @@ export default function AllProducts({
 }) {
   return (
     <div>
-      <Card className="h-[350px]">
+      <Card className="h-[350px] hover:bg-slate-100">
         <CardHeader className="flex justify-center items-center">
           <Image
             src={image}
