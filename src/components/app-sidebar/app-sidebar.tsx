@@ -10,7 +10,7 @@ import { NavUser } from "./nav-user";
 import { items, user, topProduct } from "~/lib/app-sidebar";
 import { NavHome } from "./nav-home";
 import { NavPlatform } from "./nav-platform";
-import { NavTopProduct } from "./nav-topProduct";
+import { NavTopProduct } from "./nav-top-product";
 
 export function AppSidebar() {
   return (

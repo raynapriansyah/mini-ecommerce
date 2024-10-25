@@ -1,24 +1,5 @@
 import { Store, ShoppingBag, ShoppingCart, Shapes } from "lucide-react";
 
-// Top Product
-export const topProduct = [
-  {
-    name: "Product 1",
-    url: "/product/1",
-    icon: Store,
-  },
-  {
-    name: "Product 2",
-    url: "/product/2",
-    icon: ShoppingBag,
-  },
-  {
-    name: "Product 3",
-    url: "/product/3",
-    icon: ShoppingCart,
-  },
-];
-
 // Platform;
 export const items = [
   {
@@ -68,6 +49,25 @@ export const items = [
         url: "/product",
       },
     ],
+  },
+];
+
+// Top Product
+export const topProduct = [
+  {
+    name: "Product 1",
+    url: "/product/1",
+    icon: Store,
+  },
+  {
+    name: "Product 2",
+    url: "/product/2",
+    icon: ShoppingBag,
+  },
+  {
+    name: "Product 3",
+    url: "/product/3",
+    icon: ShoppingCart,
   },
 ];
 
