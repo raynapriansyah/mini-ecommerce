@@ -19,7 +19,7 @@ export default function CategoryJewelery({
 
   return (
     <div>
-      <Card>
+      <Card className="hover:bg-slate-100 shadow-lg">
         <CardHeader className="flex justify-center items-center">
           <Image
             src={image}

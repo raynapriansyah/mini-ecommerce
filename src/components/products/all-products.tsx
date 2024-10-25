@@ -19,7 +19,7 @@ export default function AllProducts({
 }) {
   return (
     <div>
-      <Card className="h-[350px] hover:bg-slate-100">
+      <Card className="h-[300px] hover:bg-slate-100 shadow-lg">
         <CardHeader className="flex justify-center items-center">
           <Image
             src={image}
@@ -30,13 +30,13 @@ export default function AllProducts({
           />
         </CardHeader>
         <CardContent>
-          <h1>{title}</h1>
+          <h1 className="truncate ...">{title}</h1>
           <h1 className="font-bold text-lg">${price}</h1>
           <div className="flex justify-between mt-2">
             <h1>{rating.rate}⭐</h1>
-            <h1>{description}</h1>
             <h1>Stock: {rating.count}</h1>
           </div>
+          <h1>{description}</h1>
         </CardContent>
       </Card>
     </div>

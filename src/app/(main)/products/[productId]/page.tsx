@@ -1,8 +1,7 @@
-import Link from "next/link";
-import AllProducts from "~/components/products/all-products";
+import DetailProduct from "~/components/products/detail-product";
 import { GetProductDetails } from "~/lib/fetch-data";
 
-export default async function first({
+export default async function DetailProducts({
   params,
 }: {
   params: {
@@ -11,14 +10,12 @@ export default async function first({
 }) {
   const product = await GetProductDetails(params.productId);
   return (
-    <Link key={product.id} href={`/products/${product.id}`}>
-      <AllProducts
-        title={product.title}
-        image={product.image}
-        description={product.description}
-        price={product.price}
-        rating={product.rating}
-      />
-    </Link>
+    <DetailProduct
+      title={product.title}
+      image={product.image}
+      price={product.price}
+      rating={product.rating}
+      description={product.description}
+    />
   );
 }
