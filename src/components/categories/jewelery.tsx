@@ -15,11 +15,11 @@ export default function CategoryJewelery({
     count: number;
   };
 }) {
-  const limitedTitle = title.length > 35 ? `${title.slice(0, 35)}...` : title;
+  const limitedTitle = title.length > 25 ? `${title.slice(0, 25)}...` : title;
 
   return (
     <div>
-      <Card className="hover:bg-slate-100 shadow-lg">
+      <Card className="h-[300px] hover:bg-slate-100 shadow-lg">
         <CardHeader className="flex justify-center items-center">
           <Image
             src={image}
@@ -30,9 +30,9 @@ export default function CategoryJewelery({
           />
         </CardHeader>
         <CardContent>
-          <h1>{limitedTitle}</h1>
+          <h1 className="text-[0.9rem]">{limitedTitle}</h1>
           <h1 className="font-bold text-lg">${price}</h1>
-          <div className="flex justify-between mt-2">
+          <div className="flex justify-between mt-1 text-sm">
             <h1>{rating.rate}⭐</h1>
             <h1>Stock: {rating.count}</h1>
           </div>

@@ -30,9 +30,9 @@ export default function AllProducts({
           />
         </CardHeader>
         <CardContent>
-          <h1 className="truncate ...">{title}</h1>
-          <h1 className="font-bold text-lg">${price}</h1>
-          <div className="flex justify-between mt-2">
+          <h1 className="text-[0.9rem] truncate ...">{title}</h1>
+          <h1 className="font-bold text-md">${price}</h1>
+          <div className="flex justify-between mt-2 text-sm md:text-md">
             <h1>{rating.rate}⭐</h1>
             <h1>Stock: {rating.count}</h1>
           </div>

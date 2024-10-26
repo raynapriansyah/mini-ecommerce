@@ -46,7 +46,7 @@ export const items = [
     items: [
       {
         title: "kela",
-        url: "/product",
+        url: "#",
       },
     ],
   },
